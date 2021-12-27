@@ -15,18 +15,15 @@ Including another URLconf
 """
 
 from typing import AsyncIterator
-from django.urls import include
 from django.contrib import admin
 from django.urls import path
-
 from Vistas.views import SecondView
 from Vistas.views import MyView
-# from Vistas.views import vista1, vista2
+
 
 AsyncIterator
 urlpatterns = [
     path('admin/', admin.site.urls),
-
     path('api/', SecondView.as_view()),
     path('', MyView.as_view()),
 ]
