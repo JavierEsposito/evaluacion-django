@@ -14,6 +14,10 @@ python -m pip install Django
 ```
 python -m pip install requests
 ```
+4- Ejecutar el siguiente comando en la raíz del proyecto
+```
+python manage.py migrate
+```
 
 ### Ejecución 🚀
 1- Para inicializar el servidor ejecutar el siguiente comando en la raíz del proyecto:
